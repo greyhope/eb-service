@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "3c8fcc9b-2475-f7b0-2ff4-82172ac8aa09",
+		"name": "Home (springboot)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sample Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"requestId\":\"34567u8i9\",\n    \"payload\":\"a sample payload..\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ebService/performService",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ebService",
+						"performService"
+					]
+				},
+				"description": "localhost:8080/ebService/performService"
+			},
+			"response": []
+		},
+		{
+			"name": "Sample Service - Actuator Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ebService/actuator/health",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ebService",
+						"actuator",
+						"health"
+					]
+				},
+				"description": "localhost:8080/ebService/actuator/health"
+			},
+			"response": []
+		},
+		{
+			"name": "Sample Servce - Actuator Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ebService/actuator/mappings",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ebService",
+						"actuator",
+						"mappings"
+					]
+				},
+				"description": "localhost:8080/ebService/actuator/info"
+			},
+			"response": []
+		},
+		{
+			"name": "Sample Service - Actuator Loggers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ebService/actuator/loggers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ebService",
+						"actuator",
+						"loggers"
+					]
+				},
+				"description": "localhost:8080/ebService/actuator/loggers"
+			},
+			"response": []
+		},
+		{
+			"name": "Sample Service - Actuator View Appender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ebService/actuator/loggers/org.greyhope",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ebService",
+						"actuator",
+						"loggers",
+						"org.greyhope"
+					]
+				},
+				"description": "localhost:8080/ebService/actuator/loggers/org.greyhope"
+			},
+			"response": []
+		},
+		{
+			"name": "Sample Service - Set Appender Levels",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"configuredLevel\": \"DEBUG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ebService/actuator/loggers/org.greyhope",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ebService",
+						"actuator",
+						"loggers",
+						"org.greyhope"
+					]
+				},
+				"description": "localhost:8080/ebService/actuator/loggers/org.greyhope"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ebaa520e-beee-4137-9e42-c7125f41ae5d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9ebba083-0b0b-42c4-9071-49b9d60ac1f6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
